@@ -26,7 +26,6 @@ public class ShootOfGrabbed : MonoBehaviour {
             //shoot
             simpleShoot.TriggerShoot();
             a_gunShot.Play();
-
         }
 		
 	}

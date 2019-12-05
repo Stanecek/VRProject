@@ -47,15 +47,13 @@ public class OVRGrabber : MonoBehaviour
     [SerializeField]
     protected OVRInput.Controller m_controller;
 
-    public OVRInput.Controller GetController() {
-        {
-            return m_controller;
-        } }
-
     [SerializeField]
     protected Transform m_parentTransform;
 
-    protected bool m_grabVolumeEnabled = true;
+    [SerializeField]
+    protected GameObject m_player;
+
+	protected bool m_grabVolumeEnabled = true;
     protected Vector3 m_lastPos;
     protected Quaternion m_lastRot;
     protected Quaternion m_anchorOffsetRotation;
@@ -293,7 +291,8 @@ public class OVRGrabber : MonoBehaviour
             // speed and sends them flying. The grabbed object may still teleport inside of other objects, but fixing that
             // is beyond the scope of this demo.
             MoveGrabbedObject(m_lastPos, m_lastRot, true);
-            if(m_parentHeldObject)
+            SetPlayerIgnoreCollision(m_grabbedObj.gameObject, true);
+            if (m_parentHeldObject)
             {
                 m_grabbedObj.transform.parent = transform;
             }
@@ -346,6 +345,7 @@ public class OVRGrabber : MonoBehaviour
     {
         m_grabbedObj.GrabEnd(linearVelocity, angularVelocity);
         if(m_parentHeldObject) m_grabbedObj.transform.parent = null;
+        SetPlayerIgnoreCollision(m_grabbedObj.gameObject, false);
         m_grabbedObj = null;
     }
 
@@ -376,4 +376,25 @@ public class OVRGrabber : MonoBehaviour
             GrabbableRelease(Vector3.zero, Vector3.zero);
         }
     }
+
+    public OVRInput.Controller GetController()
+    {
+        return m_controller;
+    }
+
+    protected void SetPlayerIgnoreCollision(GameObject grabbable, bool ignore)
+	{
+		if (m_player != null)
+		{
+			Collider playerCollider = m_player.GetComponent<Collider>();
+			if (playerCollider != null)
+			{
+				Collider[] colliders = grabbable.GetComponents<Collider>();
+				foreach (Collider c in colliders)
+				{
+					Physics.IgnoreCollision(c, playerCollider, ignore);
+				}
+			}
+		}
+	}
 }

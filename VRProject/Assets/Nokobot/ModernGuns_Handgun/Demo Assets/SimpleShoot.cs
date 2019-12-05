@@ -38,7 +38,7 @@ public class SimpleShoot : MonoBehaviour
 
 
         Destroy(tempFlash, 0.5f);
-        Destroy(bullet, 4.0f);
+        //  Destroy(bullet, 4.0f);
         //  Instantiate(casingPrefab, casingExitLocation.position, casingExitLocation.rotation).GetComponent<Rigidbody>().AddForce(casingExitLocation.right * 100f);
        
     }
