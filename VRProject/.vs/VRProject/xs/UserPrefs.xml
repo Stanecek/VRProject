@@ -1,8 +1,5 @@
 ﻿<Properties StartupConfiguration="{ED4E5404-283F-BF83-1E68-BF8BEFFEADDD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/GrabManager.cs">
-    <Files>
-      <File FileName="Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/GrabManager.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -17,16 +14,16 @@
                 <Node name="SampleFramework" expanded="True">
                   <Node name="Core" expanded="True">
                     <Node name="DistanceGrab" expanded="True">
-                      <Node name="Scripts" expanded="True">
-                        <Node name="GrabManager.cs" selected="True" />
-                      </Node>
+                      <Node name="Scripts" expanded="True" />
                     </Node>
                   </Node>
                   <Node name="Editor" expanded="True" />
                 </Node>
                 <Node name="VR" expanded="True">
                   <Node name="Scripts" expanded="True">
-                    <Node name="Util" expanded="True" />
+                    <Node name="Util" expanded="True">
+                      <Node name="OVRGrabbable.cs" selected="True" />
+                    </Node>
                   </Node>
                 </Node>
               </Node>
@@ -39,7 +36,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="74264da5-668d-4ec7-a4c7-9bc85e163b90" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="44c4112b-72fa-4f4f-9541-8418ded5add1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
