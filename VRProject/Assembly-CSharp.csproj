@@ -63,7 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Nokobot\ModernGuns_Handgun\Demo Assets\SimpleShoot.cs" />
+    <Compile Include="Assets\3rd Party\Nokobot\ModernGuns_Handgun\Demo Assets\SimpleShoot.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
@@ -349,12 +349,14 @@
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPPropagationSettings.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPSettings.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPVersion.cs" />
+    <Compile Include="Assets\porq.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\FlashlightSwitch.cs" />
     <Compile Include="Assets\Scripts\Mirror.cs" />
     <Compile Include="Assets\Scripts\MirrorShard.cs" />
     <Compile Include="Assets\Scripts\Scalable.cs" />
     <Compile Include="Assets\Scripts\ShootOfGrabbed.cs" />
+    <Compile Include="Assets\Scripts\TargetSpawner.cs" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_DiffBump.shader" />

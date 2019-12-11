@@ -1,15 +1,13 @@
 ﻿<Properties StartupConfiguration="{ED4E5404-283F-BF83-1E68-BF8BEFFEADDD}|">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TargetSpawner.cs">
+    <Files>
+      <File FileName="Assets/Scripts/TargetSpawner.cs" Line="61" Column="80" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VRProject" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Nokobot" expanded="True">
-                <Node name="ModernGuns_Handgun" expanded="True">
-                  <Node name="Demo Assets" expanded="True" />
-                </Node>
-              </Node>
               <Node name="Oculus" expanded="True">
                 <Node name="SampleFramework" expanded="True">
                   <Node name="Core" expanded="True">
@@ -21,13 +19,13 @@
                 </Node>
                 <Node name="VR" expanded="True">
                   <Node name="Scripts" expanded="True">
-                    <Node name="Util" expanded="True">
-                      <Node name="OVRGrabbable.cs" selected="True" />
-                    </Node>
+                    <Node name="Util" expanded="True" />
                   </Node>
                 </Node>
               </Node>
-              <Node name="Scripts" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="TargetSpawner.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -36,7 +34,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="44c4112b-72fa-4f4f-9541-8418ded5add1" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a1dc800a-4162-4f3c-bd4f-e07158057ede" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

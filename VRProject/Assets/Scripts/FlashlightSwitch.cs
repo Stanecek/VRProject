@@ -9,10 +9,10 @@ public class FlashlightSwitch : MonoBehaviour {
 
 
     AudioSource flashlight_Click;
-    bool LightOn = true;
-    bool LightOff = false;
+    bool LightOn = false;
+    bool LightOff = true;
     float off = 0.0f;
-    float on = 2.1f;
+    float on = 4.0f;
 
 
 	// Use this for initialization
