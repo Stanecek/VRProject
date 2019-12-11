@@ -20,7 +20,7 @@ public class TargetSpawner : MonoBehaviour
     float angle;
     bool readyToFire;
     float fireDelay;
-    int fireForce = 15;
+    float fireForce = 7.5f;
 
     // Start is called before the first frame update
     private void Start()
@@ -42,7 +42,7 @@ public class TargetSpawner : MonoBehaviour
                 angle = Random.Range(90.0f, 105.0f);
                 break;
         }
-        fireDelay = Random.Range(0.5f, 5.0f);
+        fireDelay = Random.Range(0.5f, 3.0f);
         StartCoroutine(Fire(fireDelay));
     }
 
@@ -57,9 +57,9 @@ public class TargetSpawner : MonoBehaviour
 
     void SpawnPorq()
     {
-        Debug.Log(angle);
-        GameObject spawnedPorq = Instantiate(porq, transform.position, Quaternion.Euler(0, 180, angle));
-        spawnedPorq.GetComponent<Rigidbody>().AddForce(0, fireForce * Mathf.Sin(angle), fireForce * Mathf.Cos(angle),ForceMode.Impulse);
+        GameObject spawnedPorq = Instantiate(porq, transform.position, Quaternion.Euler(0, 0, angle));
+        spawnedPorq.GetComponent<Rigidbody>().AddForce(0, fireForce * Mathf.Sin(Mathf.Deg2Rad * angle), -1 * fireForce * Mathf.Cos(Mathf.Deg2Rad * angle), ForceMode.Impulse);
+        //Debug.Log("Angle: " + angle + ":  " + Mathf.Abs(fireForce * Mathf.Sin(Mathf.Deg2Rad * angle)) + ":" + Mathf.Abs(fireForce * Mathf.Cos(Mathf.Deg2Rad * angle)));
     }
 
     IEnumerator Fire(float delay)

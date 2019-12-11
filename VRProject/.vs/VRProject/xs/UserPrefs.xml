@@ -1,30 +1,27 @@
 ﻿<Properties StartupConfiguration="{ED4E5404-283F-BF83-1E68-BF8BEFFEADDD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TargetSpawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/OrangeRotate.cs">
     <Files>
-      <File FileName="Assets/Scripts/TargetSpawner.cs" Line="61" Column="80" />
+      <File FileName="Assets/Scripts/Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SimpleShoot.cs" Line="15" Column="25" />
+      <File FileName="Assets/Scripts/ShootOfGrabbed.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TargetSpawner.cs" Line="23" Column="26" />
+      <File FileName="Assets/Scripts/Target.cs" Line="18" Column="71" />
+      <File FileName="Assets/Scripts/porq.cs" Line="17" Column="67" />
+      <File FileName="Assets/Scripts/Mirror.cs" Line="16" Column="83" />
+      <File FileName="Assets/Scripts/OrangeRotate.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="VRProject" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Oculus" expanded="True">
-                <Node name="SampleFramework" expanded="True">
-                  <Node name="Core" expanded="True">
-                    <Node name="DistanceGrab" expanded="True">
-                      <Node name="Scripts" expanded="True" />
-                    </Node>
-                  </Node>
-                  <Node name="Editor" expanded="True" />
-                </Node>
-                <Node name="VR" expanded="True">
-                  <Node name="Scripts" expanded="True">
-                    <Node name="Util" expanded="True" />
-                  </Node>
+              <Node name="3rd Party" expanded="True">
+                <Node name="Nokobot" expanded="True">
+                  <Node name="ModernGuns_Handgun" expanded="True" />
                 </Node>
               </Node>
               <Node name="Scripts" expanded="True">
-                <Node name="TargetSpawner.cs" selected="True" />
+                <Node name="OrangeRotate.cs" selected="True" />
               </Node>
             </Node>
           </Node>
